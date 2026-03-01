@@ -77,7 +77,7 @@ int main()
     lil::vector lilVec1 {16, 23, 34};
     lilVec1.push_back(val);
 
-    lil::vector lilVec2 = lilVec1;
+    lil::vector lilVec2 = lilVec1; //kann gefährlich werden, wenn nicht definiert, wie zu machen
 
     std::cout << "lilVec1: " << std::endl;
     for(int i=0 ; i<lilVec1.getSize() ; i++)    {

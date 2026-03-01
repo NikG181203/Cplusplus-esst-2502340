@@ -21,7 +21,7 @@ private:
     MathVec3D mResult;
     std::string mName;
 
-    static int numCalcs;
+    static int numCalcs;// wie globale Klassenvariablen in Python!
 };
 
 #endif // CALCULATOR_H

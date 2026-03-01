@@ -3,7 +3,7 @@
 
 #include "fahrzeug.h"
 
-class Boot : virtual public Fahrzeug
+class Boot : virtual public Fahrzeug //wissen, dass bei gleichen elementen nur einmal vorhanden
 {
 public:
     Boot();

@@ -21,13 +21,13 @@ struct CreditCard {
     }
 
     int mId = 0;
-    std::weak_ptr<Customer> mCustomer;
+    std::weak_ptr<Customer> mCustomer; //wird nach shared zerstört
 };
 
 
 int main()
 {
-    auto myCustomer = std::make_shared<Customer>();
+    auto myCustomer = std::make_shared<Customer>(); //make_shared statt new Customer
     auto myCreditCard = std::make_shared<CreditCard>();
 
     myCustomer->mCreditCard = myCreditCard;

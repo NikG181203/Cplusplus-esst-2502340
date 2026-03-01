@@ -15,7 +15,7 @@ public:
     float getPos() { return mPosition; }
 
 protected:
-    float mSpeed = 0.0f;
+    float mSpeed = 0.0f; //element wird an beide Klassen vererbt -> schlecht
 
 private:
     float mPosition = 0.0f;

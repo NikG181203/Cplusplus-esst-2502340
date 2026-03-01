@@ -91,6 +91,7 @@ int main()
 
     /// auto ptr2 = ptr1; // Unique does not like being copied!
     auto ptr2 = std::move(ptr1); // But moving is okay :-)
+    //ptr1 wird ungültig -> interner adressentausch
 
     if(ptr2)
     {
@@ -101,7 +102,7 @@ int main()
 
     }
 
-    if(!ptr1)
+    if(!ptr1) //pointer ist ungültig
     {
         std::cout << "ptr1 is not pointing to the object anymore." << std::endl;
     }

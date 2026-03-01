@@ -25,13 +25,15 @@ struct CreditCard {
     CreditCardState mState = CreditCardState::New;
 };
 
-static_assert(sizeof(decltype(CreditCard::mId)) >= 4, "Memory for CreditCard class Id is too small!");
+static_assert(sizeof(decltype(CreditCard::mId)) >= 4, "Memory for CreditCard class Id is too small!"); //Bedingung, Ausgabe für falsch
 static_assert(sizeof(decltype(Customer::mId)) >= 4, "Memory for Customer class Id is too small!");
 
 int main()
 {
     Customer peter;
     CreditCard visa;
+
+    //assert() -> würde abstürzen, wenn Bedingung nicht gegeben
 
     peter.mState = CustomerState::Premium;
     visa.mState = CreditCardState::Valid;

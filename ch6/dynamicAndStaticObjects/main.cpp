@@ -12,14 +12,14 @@ Calculator *tempCalc = nullptr;
 
 void executeCalcs()
 {
-    {
+    { //Element wirdzerstört, sobald Scope verlassen wird
         // Static case
         Calculator calc1("Calc1");
         performTasks(calc1);
     }
 
     // Dynamic case
-    Calculator *calc2 = new Calculator("Calc2");
+    Calculator *calc2 = new Calculator("Calc2"); //Calculator wird (durch new) erst zerstört, wenn funktion durchgelaufen
     performTasks(*calc2);
 
     tempCalc = calc2;

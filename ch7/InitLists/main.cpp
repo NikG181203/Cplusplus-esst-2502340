@@ -6,9 +6,9 @@ namespace lil
     {
     public:
 
-        vector(const std::initializer_list<int> list)
+        vector(const std::initializer_list<int> list) //liste mit egal wie vielen elementen wird initialisiert
         {
-            for(const auto &elem : list)
+            for(const auto &elem : list) //jede Adresse wird durchgegangen in der liste
             {
                 push_back(elem);
             }
@@ -59,7 +59,7 @@ int main()
     lil::vector lilVec1 {16, 23, 34};
     lilVec1.push_back(val);
 
-    std::cout << lilVec1[0] << std::endl;
+    std::cout << lilVec1[0] << std::endl; //keine for möglich, da begin und end vector nicht umgesetzt
     std::cout << lilVec1[1] << std::endl;
     std::cout << lilVec1[2] << std::endl;
     std::cout << lilVec1[3] << std::endl;

@@ -1,12 +1,12 @@
 #include <iostream>
 
-enum class CustomerState {
+enum class CustomerState { //Wörter werden in Zahlen umgeändert
     New,
     Standard,
     Premium
 };
 
-enum CreditCardState {
+enum class CreditCardState {
     New,
     Valid,
     TransferInProgress,
@@ -37,7 +37,7 @@ int main()
         std::cout << "Die Visa Kreditkarte is ungueltig." << std::endl;
     }
 
-    std::cout << "peter.mState: " << int(peter.mState) << std::endl;
+    std::cout << "peter.mState: " << int(peter.mState) << std::endl;//bnötigt Typenwandlung
     std::cout << "visa.mState: " << int(visa.mState) << std::endl;
     return 0;
 }

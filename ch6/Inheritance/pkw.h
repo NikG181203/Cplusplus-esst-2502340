@@ -3,7 +3,7 @@
 
 #include "fahrzeug.h"
 
-class PKW : public Fahrzeug
+class PKW : public Fahrzeug //trennnung mit ": public NAME"
 {
 public:
     PKW();

@@ -12,7 +12,7 @@ int main()
     std::cout << "Wieviele Elemente brauchen Sie? ";
     std::cin >> pMyVec->mNum;
 
-    pMyVec->mValues = new int [pMyVec->mNum];
+    pMyVec->mValues = new int [pMyVec->mNum];//mValueszeigt auf Speicherbereich der anegebenen Größe
 
     for(int i=0 ; i<pMyVec->mNum ; i++) {
         std::cout << "Element " << i << " hat folgenden Wert: ";

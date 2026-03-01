@@ -3,7 +3,7 @@
 
 #include <string>
 
-struct Customer
+struct Customer //struct mit standart als publich, class mit standart als private
 {
 
     /**

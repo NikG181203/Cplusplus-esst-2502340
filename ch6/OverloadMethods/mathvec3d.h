@@ -27,7 +27,7 @@ public:
         mY = newVal.mY;
         mZ = newVal.mZ;
     }
-    void setValue(const float x, const float y, const float z)
+    void setValue(const float x, const float y, const float z) //ermöglicht Aufruf mit mehreren Versionen
     {
         mX = x;
         mY = y;

@@ -43,7 +43,7 @@ int main()
 
     const int val = 20;
 
-    std::vector<int> stdVec;
+    std::vector<int> stdVec; //std ist namespace, der vector definiert
     stdVec.push_back(val);
 
     std::cout << stdVec[0] << std::endl;

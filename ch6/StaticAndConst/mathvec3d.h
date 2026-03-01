@@ -16,7 +16,7 @@ public:
         mX(x), mY(y), mZ(z) {}
 
     // Getters for components
-    float getX() const { return mX; }
+    float getX() const { return mX; } //methode kann mit const variable aufgerufen werden -> muss wissen
     float getY() const { return mY; }
     float getZ() const { return mZ; }
 

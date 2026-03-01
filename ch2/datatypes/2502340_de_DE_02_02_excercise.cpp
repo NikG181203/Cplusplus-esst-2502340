@@ -4,9 +4,9 @@
 
 #include <iostream>
 
-struct Vec2D
+struct Vec2D //neuer "Datentyp" erstellen
 {
-    unsigned int x;
+    unsigned int x; //unsinged integer nicht mit egativen Zahlen möglich!
     unsigned int y;
 };
 

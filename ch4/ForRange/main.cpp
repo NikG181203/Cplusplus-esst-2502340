@@ -3,12 +3,12 @@
 
 int main()
 {
-    std::vector<int> myVec = {23, 45, 65};
+    std::vector<int> myVec = {23, 45, 65}; //dynamisches Array
 
-    myVec.push_back(13);
+    myVec.push_back(13); //Vergrößert Vektor
 
     std::cout << "Loop with classical for: " << std::endl;
-    for( int i=0 ; i<myVec.size() ; i++ ) {
+    for( int i=0 ; i<myVec.size() ; i++ ) { //Abfragen der Größe des Vektors
         std::cout << myVec[i] << std::endl;
     }
 

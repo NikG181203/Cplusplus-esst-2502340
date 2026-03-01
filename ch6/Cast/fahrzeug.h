@@ -6,7 +6,7 @@ class Fahrzeug
 {
 public:
     Fahrzeug();
-    virtual ~Fahrzeug() {};
+    virtual ~Fahrzeug() {}; //sorgt für Aufruf des richtigen Destruktors
 
     void showSpeed() const;
 

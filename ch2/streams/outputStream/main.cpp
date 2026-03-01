@@ -4,7 +4,7 @@
 int main()
 {
     const int zahl = 42;
-    const float simplePi = 3.14f;
+    const float simplePi = 3.14f; //Format Spezifier -> keine Falschen, spart sich printf
     const double betterPi = 3.1459f;
     const std::string SomeText = "Hello Text";
 

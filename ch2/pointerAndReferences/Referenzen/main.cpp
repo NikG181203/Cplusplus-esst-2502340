@@ -24,11 +24,20 @@ int main()
     std::cout << val << std::endl;
 
     // With pointers (like you know it from C)
+    /*
+    //pointer in C
+    int *ptrVal = &val;
+    squareMeUpPtr(ptrVal)
+    */
     squareMeUpPtr(&val);
     std::cout << val << std::endl;
 
     // C++ Reference variant
-    squareMeUp(val);
+    /*
+    int &refVal = val
+    squareMeUp(val)
+    */
+    squareMeUp(val); //C++ reicht auch Inhalt der Übergabe. Funktion weiß selber durch anwendung
     std::cout << val << std::endl;
 
     return 0;

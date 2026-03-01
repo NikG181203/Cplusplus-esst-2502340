@@ -3,7 +3,7 @@
 
 struct MyVector {
   int mNum = 0;
-  std::unique_ptr<int[]> mValues = nullptr;
+  std::unique_ptr<int[]> mValues = nullptr; //kommt nur einmal vor, muss nicht aufgeräumt werden
 };
 
 int main()

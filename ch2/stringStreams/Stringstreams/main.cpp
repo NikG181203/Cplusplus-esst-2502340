@@ -4,12 +4,12 @@
 
 int main()
 {
-    std::stringstream ss;
+    std::stringstream ss; //elemente als string reinschreiben und in richtigem typ extrahieren
 
     std::array<int, 4> x;
 
     ss << "30 25 70.3";
-    ss << "EtwasText";
+    ss << "EtwasText"; //geht nicht zum auflösen, stringstream hängt hinten an
 
     ss >> x[0];
     ss >> x[1];
@@ -27,3 +27,8 @@ int main()
 
     return 0;
 }
+
+
+//stoi() -> string to integer
+//stof() -> string to float
+//to_string() -> wandelt in string

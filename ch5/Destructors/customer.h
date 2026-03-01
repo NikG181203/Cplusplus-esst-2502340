@@ -15,7 +15,7 @@ struct Customer
     /**
      * @brief Customer Destructor
      */
-    virtual ~Customer();
+    virtual ~Customer(); //ist wichtig bei Vererbung!
 
     /**
      * @brief getName

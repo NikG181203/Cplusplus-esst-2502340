@@ -9,7 +9,7 @@ int main()
     Boot motorBoot;
 
     //Fahrzeug fz; // Error, because Fahrzeug is an abstract class due to virtual void accelerate() = 0;
-    Fahrzeug *fz = static_cast<Fahrzeug*>(&cabrio);
+    Fahrzeug *fz = static_cast<Fahrzeug*>(&cabrio); //Farhzeig als abstrakte Klasse nicht mehr "normal" aufrufbar
     fz->accelerate();
     fz->accelerate();
 
@@ -18,8 +18,8 @@ int main()
     fz->accelerate();
 
 
-    cabrio.showValues();
-    motorBoot.showStatus();
+    cabrio.showValues(); //PKW kann überschreiben, da implementiert
+    motorBoot.showStatus(); //Boot nutzt Fahrzeug, da nicht implementiert
 
 
     return 0;

@@ -30,7 +30,7 @@ public:
     void rename(const std::string &name);
 
 private:
-    std::string name;
+    std::string name; //this pointer benötigt, wenn mehrere gleiche namen benutzt
 };
 
 /**

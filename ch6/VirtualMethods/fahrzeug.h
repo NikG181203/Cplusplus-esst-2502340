@@ -8,9 +8,9 @@ public:
     Fahrzeug();
     virtual ~Fahrzeug() {};
 
-    virtual void showSpeed() const;
+    virtual void showSpeed() const; //kann von avgeleiteter Klasse üebrschrieben werden
 
-    virtual void accelerate() = 0;
+    virtual void accelerate() = 0; //= 0 hat keine Implementierung
 
     float getPos() { return mPosition; }
 

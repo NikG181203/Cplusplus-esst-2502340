@@ -28,10 +28,10 @@ namespace lil
             delete [] mData;
 
             mSize = myCopy.mSize;
-            mData = new int [mSize];
+            mData = new int [mSize]; //legt neu an
 
             for(int i=0 ; i<mSize ; i++) {
-                mData[i] = myCopy[i];
+                mData[i] = myCopy[i]; //beschreibt mit werten
             }
         }
 
@@ -40,10 +40,10 @@ namespace lil
             delete [] mData;
 
             mData = myMovee.mData;
-            mSize = myMovee.mSize;
+            mSize = myMovee.mSize; //legt neu an
 
             myMovee.mSize = 0;
-            myMovee.mData = nullptr;
+            myMovee.mData = nullptr; //setzt alte werte auf leer
         }
 
 
@@ -96,7 +96,8 @@ int main()
         std::cout << lilVec1[i] << std::endl;
     }
 
-    lil::vector lilVec2 = std::move(lilVec1);
+    lil::vector lilVec2 = std::move(lilVec1); //ohne Move Konstruktor wird einfach kopiert
+    //Objekt muss nicht als pointer generiert werden, trotzdem geht move -> zu implementieren
 
     std::cout << "lilVec1 after move:" << std::endl;
     for(int i=0 ; i<lilVec1.getSize() ; i++) {

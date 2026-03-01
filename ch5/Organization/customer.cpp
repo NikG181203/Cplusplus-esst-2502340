@@ -1,6 +1,6 @@
 #include "customer.h"
 
-Customer::Customer(const std::string &name)
+Customer::Customer(const std::string &name) //definition von verhalten der methoden
 {
     mName = name;
 }

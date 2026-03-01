@@ -17,7 +17,7 @@ std::string Customer::getName()
 
 void Customer::rename(const std::string &name)
 {
-    this->name = name;
+    this->name = name; //this ist implizit auf klassen variable
 }
 
 void askForName(Customer &person)

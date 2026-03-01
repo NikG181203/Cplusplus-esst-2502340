@@ -7,10 +7,10 @@ int main()
 
     std::cout << myText << std::endl;
 
-    decltype(myText.find("W")) wPos = myText.find("W");
+    decltype(myText.find("W")) wPos = myText.find("W"); //findet Datantyp, wenn nicht deklariert
     std::cout << wPos << std::endl;
 
-    myText.erase(wPos-1, 1);
+    myText.erase(wPos-1, 1); //löscht ein Element nach Position
     std::cout << myText << std::endl;
 
     return 0;

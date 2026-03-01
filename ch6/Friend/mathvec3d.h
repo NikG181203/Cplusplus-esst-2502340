@@ -4,7 +4,7 @@
 
 class MathVec3D
 {
-    friend class Calculator;
+    friend class Calculator; //Classe kann auch auf private Elemente zugreifen
 public:    
 
     // Constructors
@@ -17,9 +17,9 @@ public:
         mX(x), mY(y), mZ(z) {}
 
     // Getters for components
-    float getX() { return mX; }
-    float getY() { return mY; }
-    float getZ() { return mZ; }
+    float getX() const { return mX; } 
+    float getY() const { return mY; }
+    float getZ() const { return mZ; }
 
     // Setters for components
     void setValue(const MathVec3D &newVal);

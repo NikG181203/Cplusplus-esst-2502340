@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-PKW::PKW()
+PKW::PKW() //definiert
 {
 
 }

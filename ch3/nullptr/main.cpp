@@ -2,7 +2,7 @@
 
 struct MyVector {
   int mNum = 0;
-  int *mValues = nullptr;
+  int *mValues = nullptr; //verwenden statt NULL!
 };
 
 int main()
@@ -31,7 +31,7 @@ int main()
 
     // Noch besser aufräumen!!
     delete [] pMyVec->mValues;
-    pMyVec->mValues = nullptr;
+    pMyVec->mValues = nullptr;//Adresse löschen!
     delete pMyVec;
     pMyVec = nullptr;
 

@@ -3,7 +3,7 @@
 
 #include <string>
 
-class Customer
+class Customer //reine deklaration in Header Datei
 {
 public:
     /**

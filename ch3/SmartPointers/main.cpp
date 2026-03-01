@@ -7,13 +7,13 @@ struct MyVector {
 
 struct SmartPtr {
 
-    SmartPtr(const int numElem) {
+    SmartPtr(const int numElem) { //Konstruktor
         pMyVec = new MyVector;
         pMyVec->mNum = numElem;
         pMyVec->mValues = new int [pMyVec->mNum];
     };
 
-    ~SmartPtr() {
+    ~SmartPtr() { //Destruktor -> automatisch aufgerufen
       delete [] pMyVec->mValues;
       pMyVec->mValues = nullptr;
       delete pMyVec;
@@ -32,7 +32,7 @@ int main()
     std::cout << "Wieviele Elemente brauchen Sie? ";
     std::cin >> num;
 
-    auto smartVec = SmartPtr(num);
+    auto smartVec = SmartPtr(num); //Aufruf mit Größe
 
     for(int i=0 ; i<smartVec.pMyVec->mNum ; i++) {
         std::cout << "Element " << i << " hat folgenden Wert: ";

@@ -20,7 +20,7 @@ void Customer::rename(const std::string &name)
     mName = name;
 }
 
-void askForName(Customer &person)
+void askForName(Customer &person) //Zugriff über Public, da nicht in Klasse enthalten
 {
     std::cout << person.getName() << std::endl;
 }

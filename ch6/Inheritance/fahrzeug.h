@@ -7,7 +7,7 @@ class Fahrzeug
 public:
     Fahrzeug();
 
-protected:
+protected: //erbende Klassen dürfen zugreifen
     float mSpeed = 0.0f;
 
 private:

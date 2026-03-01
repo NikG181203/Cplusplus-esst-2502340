@@ -29,7 +29,7 @@ void Calculator::doSomeMath()
 
     MathVec3D vec1(2.0f, 2.0f, 5.0f);
 
-    if(vec1) {
+    if(vec1) {//operator bool
         std::cout << "vec1 comps are not all 0.0f" << std::endl;
     }
 
@@ -45,7 +45,7 @@ void Calculator::showResults()
 {
     const auto &res = mResult;
 
-    std::cout << "Result: (" << res[0] << ", "
+    std::cout << "Result: (" << res[0] << ", " //operator[]
                              << res[1] << ", "
                              << res[2] << ")" << std::endl;
 }

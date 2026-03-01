@@ -19,6 +19,16 @@ public:
     Customer(const std::string &name);
 
     /**
+     * @brief Customer Constructor Initialiser List
+     * @param initlist
+     */
+    /*Customer(const std::initializer_list<int> &initlist){
+        auto it = initlist.begin();
+        //Logik einbauen
+    }
+    */
+
+    /**
      * @brief getName
      * @return returns the name of the customer
      */

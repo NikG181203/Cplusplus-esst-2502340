@@ -8,7 +8,7 @@ class PKW : public Fahrzeug
 public:
     PKW();
 
-    void accelerate() override;
+    void accelerate() override; //Methode aus Elternklasse wurde überschrieben
     void showSpeed() const override;
     void showValues();
 };

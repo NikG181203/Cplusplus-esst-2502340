@@ -34,7 +34,7 @@ public:
         return res;
     }
 
-    float operator[](const int idx) const
+    float operator[](const int idx) const //operator ermöglicht, dass gewisse zeichen funktion definiert bekommen, falls anders nicht vorhanden
     {
         assert(idx < 3 && idx >= 0);
         if(idx == 0)

@@ -40,7 +40,7 @@ public:
         mX = newVal.mX;
         mY = newVal.mY;
         mZ = newVal.mZ;
-        return *this;
+        return *this; //gibt eigene instalz zurück, wie self in python
     }
 
     MathVec3D operator+(const MathVec3D &newVal)
